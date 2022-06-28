@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    <div class="site-container">
+        <div id="parallax"></div>
+        @include('partials/header.html')
+        <main class="main">
+
+            <!-- main -->
+            <section class="main__desc">
+                <div class="container flex-all-center">
+                    <div class="main__desc-v1">
+                        <h1>
+                            Расходные материалы для медицинских лабораторий
+                        </h1>
+                        <h5>со склада в Москве и Новосибирске</h5>
+                    </div>
+                    <div class="main__desc-v2">
+                        <ul>
+                            <li>
+                                <img loading="lazy" src="./img/svg/checkbox v2.svg" class="image" width="16" height="16"
+                                    alt="">
+                                <p>Цена на 60% ниже европейских аналогов</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="./img/svg/checkbox v2.svg" class="image" width="16" height="16"
+                                    alt="">
+                                <p>Бесплатная апробация товара</p>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="./img/svg/checkbox v2.svg" class="image" width="16" height="16"
+                                    alt="">
+                                <p>Оперативные поставки с собственных складов</p>
+                            </li>
+                        </ul>
+                        <button class="primary btn-form form-btn">Отправить запрос</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section popup video -->
+            <section class="popupVideo">
+                <div class="popupVideo-desc">
+                    <h2>Как мы обеспечили качество при цене на 60% ниже европейских аналогов</h2>
+                    <h5>Мы уверены в качестве нашей продукции, поэтому высылаем образцы абсолютно бесплатно.</h5>
+                    <button class="secondary form-btn">Оставить заявку</button>
+                </div>
+
+                <a class="popupVideo-video btn" data-path="video-popup">
+                    <img class="video-btn" loading="lazy" src="./img/video_cover.jpg" class="image" width="554"
+                        height="554" alt="">
+                </a>
+
+                </button>
+
+                <!-- modal video -->
+                <div class="modals">
+                    <div class="modal-overlay">
+                        <div class="modal modal--1" data-target="video-popup">
+                            <iframe width="660" height="415" src="https://www.youtube.com/embed/nukxrlc78b4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-overlay">
+                    <div class="modal form-modal">
+                        <img class="close" loading="lazy" src="./img/svg/close.svg" class="image" width="26" height="26"
+                            alt="">
+                        <h2>Запрос образцов</h2>
+                        <p>Оставьте свои контактные данные и менеджер свяжется с вами в ближайшее время, чтобы уточнить
+                            детали.</p>
+
+                        <form>
+                            <input type="name" placeholder="Имя">
+                            <input type="phone" placeholder="Телефон">
+                            <input type="email" placeholder="E-mail">
+                            <input type="submit" class="submit-btn" value="отправить запрос">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subcategory -->
+            @include('partials/subcategory.html')
+
+        </main>
+
+        <!-- @include('partials/footer.html') -->
+    </div>
+</body>
+
+</html>

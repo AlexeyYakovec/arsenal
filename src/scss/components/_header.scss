@@ -1,0 +1,49 @@
+.header{
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 48px ;
+    margin: 0 auto;
+}
+
+.header__nav{
+    display: flex;
+    &-item{
+        &-link{
+            font-size: 18px;
+            line-height: 140%;
+            color: $blue;
+        }
+        &:not(:last-child){
+            margin-right: 32px;
+        }
+    }
+}
+.header__phone{
+    @include phone{
+       font-size: 15px;
+    }
+}
+.logo-icon{
+    @include tablet {
+        margin-right: 360px;
+    }
+    @include  small-tablet {
+        margin-right: 160px;
+    }
+    @include mobile{
+        margin-right: 90px;
+    }
+    @include phone{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+ .header__nav{
+    display: none;
+ }
+}

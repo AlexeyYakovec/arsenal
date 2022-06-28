@@ -1,0 +1,140 @@
+//video form
+.modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal {
+	background-color: #fff;
+	width: 800px;
+	height: 525px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 12px 36px;
+	
+    video{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+// form styles 
+.form-overlay{
+    position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+.form-modal{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    position: relative;
+
+    .close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+    h2{
+        color: $black;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        margin: 62px 0;
+    }
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 170%;
+        margin-bottom: 50px;
+        text-align: start;
+        width: 540px;
+    }
+    form{
+        width: 554px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input{
+            width: 100%;
+            padding: 12px 0 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 16px;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            -ms-border-radius: 16px;
+            -o-border-radius: 16px;
+            border: 1px solid #D5D5D5;
+            margin-bottom: 24px;
+        }
+        .submit-btn{
+            width: 250px;
+            padding: 16px ;
+            border-radius: 16px;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            -ms-border-radius: 16px;
+            -o-border-radius: 16px;
+            background-color: $blue;
+            color: $white;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+             -webkit-transition: 0.3s ease-in-out;
+            -moz-transition: 0.3s ease-in-out;
+            -ms-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
+            &:hover{
+                opacity: 0.8;
+            }
+}
+    }
+}
+
+.form-btn{
+
+}

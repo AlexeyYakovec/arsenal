@@ -1,0 +1,27 @@
+// если вы хотите использовать sass-переменные - удалите root
+
+  // base
+  $font-family: "Panton", sans-serif;
+  $content-width: 1140px;
+  $content-SecontaryWidth: 1140px;
+  $content-fluid-width: 1440px;
+  $container-offset: 15px;
+  $container-width: calc(($content-width) + ($container-offset) * 2); 
+  $container-fluid-width: calc(($content-fluid-width) + ($container-offset)*2); 
+
+  // colors
+  $white:#FFFFFF;
+  $white2:#E6EEFF;
+  $grey:#999999;
+  $formBorder:#D5D5D5;
+  $redLight:#FFC6C6;
+
+  $item-price:#999999;
+  $green:#00CC08;
+  $blue: #0055FF;
+  $blueIt: #4080FF;
+
+  $black:#000000;
+  $black2:#333333;
+  $red:#FF1F1F;
+  $orange:#FF9E20;

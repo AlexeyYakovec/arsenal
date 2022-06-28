@@ -1,0 +1,35 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+
+/* stylelint-disable */
+
+@font-face {
+    font-family: "Panton";
+    src: url('../fonts/Panton-Regular.woff2') format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "Panton";
+    src: url('../fonts/Panton-RegularItalic.woff2') format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Panton";
+    src: url('..fonts/Panton-Bold.woff2') format("woff2");
+    font-weight: 800;
+    font-display: swap;
+    font-style: bold;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url('..fonts/Panton-SemiBold.woff2') format("woff2");
+    font-weight: 700;
+    font-display: swap;
+    font-style: bold;
+  }
